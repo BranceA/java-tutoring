@@ -1,22 +1,61 @@
 package codeproblems;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class LogicDrills {
     public static void main(String[] args) {
-
+        isEvenOrOdd(4);
+        isEvenOrOdd(19);
+        isEvenOrOdd(-50);
+        isEvenOrOdd(-27);
     }
 
 //    https://medium.com/@codingfreak/top-25-programming-puzzles-and-brain-teasers-dac17b41e94a
 
 //    Add two numbers without using addition operator
 
+    private static int weirdSum(int x, int y){
+        return x - (-1 * y);
+    }
+
 //    Find maximum, minimum of three numbers without using conditional statement and/or ternary operator
+
+    private static void findMinAndMax(int num1, int num2, int num3){
+        ArrayList<Integer> sortArray = new ArrayList<>();
+        sortArray.add(num1);
+        sortArray.add(num2);
+        sortArray.add(num3);
+
+        Collections.sort(sortArray);
+
+        System.out.printf("The maximum number is %d and the minimum is %d%n", sortArray.get(2), sortArray.get(0));
+    }
 
 //    Determine if two integers are equal without using comparison and arithmetic operators
 
+    private static boolean areIntsEqual(int num1, int num2){
+        String string1 = Integer.toString(num1);
+        String string2 = Integer.toString(num2);
+
+        return string1.matches(string2);
+    }
+
 //    Print a colon without using a colon anywhere in the program
+
+    private static void printColon(){
+        char colon = '\u003a';
+        System.out.println(colon);
+    }
 
 //    Find if a number is even or odd without using any conditional statement
 
+    private static void isEvenOrOdd(int num){
+        String[] outcomes = {"even", "odd"};
+        int indexPoint = Math.abs(num % 2);
+
+        System.out.println(outcomes[indexPoint]);
+    }
 
 //    https://www.java67.com/2018/05/top-75-programming-interview-questions-answers.html
 
