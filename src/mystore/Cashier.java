@@ -8,13 +8,22 @@ package mystore;
 
 import peoplestuff.Person;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Cashier extends Person {
+//    public double total(List<Product> cart){
+//        double sum = 0;
+//        for(Product item : cart){
+//            sum += item.getPrice();
+//        }
+//        return sum;
+//    }
+
     public double total(List<Product> cart){
         double sum = 0;
-        for(Product item : cart){
-            sum += item.getPrice();
+        for(int i = 0; i < cart.size(); i++){
+            sum += cart.get(i).getPrice();
         }
         return sum;
     }

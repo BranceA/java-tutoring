@@ -10,6 +10,7 @@ package mystore;
 // Pass the List to the Cashier's total method and System.out.println the result
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class BranceMart {
@@ -32,6 +33,17 @@ public class BranceMart {
         myCart.add(iphone);
 
         Cashier brance = new Cashier();
+
+        // Computer
+        // |
+        // |
+        // |
+        // V
+        // Apple
+
+        Computer specificApple = new Apple(true, "Different Macbook Pro");
+
+        System.out.println("specificApple.getOS() = " + specificApple.getOS());
 
         System.out.println("brance.total(myCart) = " + brance.total(myCart));
     }

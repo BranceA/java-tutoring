@@ -18,6 +18,7 @@ public class LogicDrills {
 //    Find if a number is even or odd without using any conditional statement
 
 
+
 //    https://www.java67.com/2018/05/top-75-programming-interview-questions-answers.html
 
 //    find the duplicate number on a given integer array
