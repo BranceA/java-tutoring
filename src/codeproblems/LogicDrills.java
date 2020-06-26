@@ -1,5 +1,10 @@
 package codeproblems;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class LogicDrills {
     public static void main(String[] args) {
 
@@ -18,39 +23,62 @@ public class LogicDrills {
 //    Find if a number is even or odd without using any conditional statement
 
 
+    // Given an integer, print every prime number from 1 to that integer
+    // https://codingpuzzles.com/
 
-//    https://www.java67.com/2018/05/top-75-programming-interview-questions-answers.html
+//    private static void printPrimes(int stoppingPoint) {
+//        for (int number = 2; number <= stoppingPoint; number++) {
+//            //print prime numbers only
+//            if (isPrime(number)) {
+//                System.out.println(number);
+//            }
+//        }
+//    }
+//
+//    public static boolean isPrime(int number){
+//        //for(int i=2; i<number; i++)
+//        if (number % 2 == 0){
+//            return false;
+//            //number is divisible so its not prime
+//        }
+//        for (int i = 3; i < Math.sqrt(number); i+=2){
+//            if(number%i == 0){
+//                return false; //number is
+//                //divisible so its not prime
+//            }
+//        }
+//        return true; //number is prime now
+//    }
 
-//    find the duplicate number on a given integer array
+    //Old way of doing things
+
+//    private static void printPrimes(int stoppingPoint) {
+//        for(int i = 0; i < stoppingPoint; i++) {
+//            List<Integer> factors = new ArrayList<>();
+//            for(int j = 1; j <= i; j++){
+//                if(i % j == 0){
+//                    factors.add(i);
+//                }
+//            }
+//            if(factors.size() == 2){
+//                System.out.println(i);
+//            }
+//        }
+//    }
+
+// http://www.crazyforcode.com/oyo-interview-questions-set-2/
+//    Given an array of numbers arrange it in the form of a single number such that the concluded number is
+//    the maximum.
+//    e.g. given : 99,8,76,45,66,9,7,33,5,42
+//    O/P : 99987766654233
+
+
+    ////////////////////////////////////////////////////////////////////////////////////////
+
+    //    find the duplicate number on a given integer array
 
     // in an array of integers from 1 to 10 find the missing number
 
-//    Write a method which will remove any given character from a String
-
-    //https://codingpuzzles.com/floyd-triangle-5231615d5c4d
-
-    //Write a method that accepts an integer and prints that many rows of a Floyd Triangle
-
-// This is what a Floyd Triangle looks like
-//            1
-//            2 3
-//            4 5 6
-//            7 8 9 10
-
-
-    // from Brance
-
-    // Write a function that takes stupid MySQL dates (example: 1234-56-78) and turns them into normal dates (example: 78-56-1234)
-
-    // Write a function that accepts an array of strings and a string. if the array doesn't contain the given string add the string to the array. Return the array either way.
-
-    // write a function that accepts a matrix of integers and returns the array from the matrix with the highest sum of all elements
-    // example [
-    //          [1, 2, 3],
-    //          [4, 5, 6],
-    //          [7, 8, 9]     <----- return this array because 7 + 8 + 9 the highest sum of all elements
-    //         ]
-
-
+    //    Write a method which will remove any given character from a String
 
 }
